@@ -23,7 +23,11 @@ public class Course {
     }
 
     public void listCourseStudents(){
-
+        System.out.print(name+" students: ");
+        for(Student s: students){
+            System.out.print(s.getName() + " ");
+        }
+        System.out.print("\n");
     }
 
     public void addStudent(Student student){

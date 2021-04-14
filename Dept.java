@@ -1,7 +1,7 @@
 public class Dept {
 
-    private String deptName;
-    private Course[] courses;
+    String deptName;
+    Course[] courses;
 
     public Dept(String deptName, Course[] courses) {
         this.deptName = deptName;
@@ -25,7 +25,11 @@ public class Dept {
     }
 
     public int countCourses(){
-
+        int count = 0;
+        for(Course c: courses){
+            count++;
+        }
+        return count;
     }
 
     public int countStudentsInDeptCourses(){

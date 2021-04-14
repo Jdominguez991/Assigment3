@@ -24,7 +24,11 @@ public class College {
     }
 
     public int countCourses(){
-
+        int count = 0;
+        for(Dept d: depts){
+            count += d.countCourses();
+        }
+        return count;
     }
 
     public int countStudentsInCourse(){
