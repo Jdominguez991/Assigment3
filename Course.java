@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Course {
     protected String name;
     protected Student[] students;
@@ -20,6 +22,13 @@ public class Course {
 
     public void setStudents(Student[] students) {
         this.students = students;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "name='" + name + '\'' +
+                '}';
     }
 
     public void listCourseStudents(){

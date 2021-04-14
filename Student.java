@@ -1,3 +1,6 @@
+import java.util.*;
+
+
 public class Student {
     private String name;
     private Course[] courses;
@@ -22,8 +25,11 @@ public class Student {
         this.courses = courses;
     }
 
-    public String toString(){
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                '}';
     }
 
     public void listStudentCourses(){
@@ -34,6 +40,6 @@ public class Student {
         System.out.print("\n");
     }
     public void addCourse(Course course){
-
+        this.courses.add(course);
     }
 }
