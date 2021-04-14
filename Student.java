@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Student {
     private String name;
-    private Course[] courses;
+    private List<Course> courses;
 
     public Student(String name) {
         this.name = name;
@@ -17,11 +17,11 @@ public class Student {
         this.name = name;
     }
 
-    public Course[] getCourses() {
+    public List<Course> getCourses() {
         return courses;
     }
 
-    public void setCourses(Course[] courses) {
+    public void setCourses(List<Course> courses) {
         this.courses = courses;
     }
 

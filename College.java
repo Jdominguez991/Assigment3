@@ -3,9 +3,9 @@ import java.util.*;
 public class College {
 
    private String collegeName;
-   private Dept[] depts;
+   private List<Dept> depts;
 
-    public static void College(String collageName, Dept[] depts) {
+    public static void College(String collageName, List<Dept> depts) {
 
     }
 
@@ -17,11 +17,11 @@ public class College {
         this.collegeName = collegeName;
     }
 
-    public Dept[] getDepts() {
+    public List<Dept> getDepts() {
         return depts;
     }
 
-    public void setDepts(Dept[] depts) {
+    public void setDepts(List<Dept> depts) {
         this.depts = depts;
     }
 
