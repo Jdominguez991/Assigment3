@@ -5,8 +5,9 @@ public class College {
    private String collegeName;
    private List<Dept> depts;
 
-    public static void College(String collageName, List<Dept> depts) {
-
+    public College(String collegeName, List<Dept> depts) {
+        this.collegeName = collegeName;
+        this.depts = depts;
     }
 
     public String getCollegeName() {
