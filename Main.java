@@ -36,6 +36,7 @@ public class Main {
     College college = new College("College",L3);
 
 
+
         c1.addStudent(s1);
         c1.addStudent(s2);
         c1.addStudent(s3);
@@ -90,6 +91,23 @@ public class Main {
         for(Dept d: college.getDepts()){
             System.out.println("Number of students in " + d.getDeptName() +":" + d.countStudentsInDeptCourses());
         }
+
+        System.out.println();
+
+        System.out.println(("Number of course: "+ college.countCourses()));
+        for(Dept d: college.getDepts()){
+            System.out.println("Number of courses in " + d.getDeptName() +":" + d.countCourses());
+        }
+
+        System.out.println();
+        s1.listStudentCourses();
+        s5.listStudentCourses();
+        s9.listStudentCourses();
+
+        System.out.println();
+        c1.listCourseStudents();
+        c3.listCourseStudents();
+        c4.listCourseStudents();
 
     }
 

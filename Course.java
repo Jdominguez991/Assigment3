@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Course {
     protected String name;
-    protected List<Student> students;
+    protected List<Student> students = new ArrayList<Student>();
 
     public Course(String name) {
         this.name = name;

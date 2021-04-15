@@ -1,9 +1,8 @@
 import java.util.*;
 
-
 public class Student {
     private String name;
-    private List<Course> courses;
+    private List<Course> courses = new ArrayList<Course>();
 
     public Student(String name) {
         this.name = name;
