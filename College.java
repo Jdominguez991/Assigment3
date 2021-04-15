@@ -33,7 +33,11 @@ public class College {
         return count;
     }
 
-    public int countStudentsInCourse(){
-
+    public int countStudentsInCourses(){
+        int count = 0;
+        for(Dept d: depts){
+            count += d.countStudentsInDeptCourses();
+        }
+        return count;
     }
 }

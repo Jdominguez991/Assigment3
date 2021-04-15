@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Course {
     protected String name;
-    protected Student[] students;
+    protected List<Student> students;
 
     public Course(String name) {
         this.name = name;
@@ -16,11 +16,11 @@ public class Course {
         this.name = name;
     }
 
-    public Student[] getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(Student[] students) {
+    public void setStudents(List<Student> students) {
         this.students = students;
     }
 
@@ -40,6 +40,6 @@ public class Course {
     }
 
     public void addStudent(Student student){
-
+        this.students.add(student);
     }
 }

@@ -35,6 +35,11 @@ public class Dept {
     }
 
     public int countStudentsInDeptCourses(){
-
+        int count = 0;
+        for(Course c: courses){
+            count += c.getStudents().size();
+        }
+        return count;
     }
 }
+

@@ -40,6 +40,7 @@ public class Student {
         System.out.print("\n");
     }
     public void addCourse(Course course){
+
         this.courses.add(course);
     }
 }
