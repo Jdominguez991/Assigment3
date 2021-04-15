@@ -87,6 +87,9 @@ public class Main {
         L2.add(c4);
         L2.add(c5);
 
+        L3.add(d1);
+        L3.add(d2);
+
         System.out.println("Number of students in college: "+college.countStudentsInCourses());
         for(Dept d: college.getDepts()){
             System.out.println("Number of students in " + d.getDeptName() +":" + d.countStudentsInDeptCourses());
