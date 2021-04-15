@@ -1,5 +1,6 @@
 import java.util.*;
 public class Main {
+    public static void main(String[] args){
 
     Student s1 = new Student("Ben");
     Student s2 = new Student("Jason");
@@ -34,7 +35,6 @@ public class Main {
 
     College college = new College("College",L3);
 
-    public void main(String[] args){
 
         c1.addStudent(s1);
         c1.addStudent(s2);
@@ -88,23 +88,9 @@ public class Main {
 
         System.out.println("Number of students in college: "+college.countStudentsInCourses());
         for(Dept d: college.getDepts()){
-            System.out.println("Number of students in " + d.getDeptName() +":" + d.countStudentsInDeptCourses();
+            System.out.println("Number of students in " + d.getDeptName() +":" + d.countStudentsInDeptCourses());
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

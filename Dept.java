@@ -3,7 +3,7 @@ import java.util.*;
 public class Dept {
 
     String deptName;
-    List<Course> courses;
+    List<Course> courses= new ArrayList<>();
 
     public Dept(String deptName, List<Course> courses) {
         this.deptName = deptName;

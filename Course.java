@@ -40,6 +40,6 @@ public class Course {
     }
 
     public void addStudent(Student student){
-        this.students.add(student);
+        students.add(student);
     }
 }
